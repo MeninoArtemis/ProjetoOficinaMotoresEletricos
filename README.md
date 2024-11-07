@@ -1,4 +1,4 @@
-Sistema de Notas de Serviço  e Banco de Dados Motores Eletricos - Projeto Oficina Pai
+Sistema de Notas de Serviço  e Banco de Dados Motores Eletricos - Projeto Oficina BD
 Este é um sistema simples de Notas de serviço com HTML, CSS e JavaScript. Ele permite que os usuários adicionem e visualizem informações sobre máquinas, incluindo dados como cliente, ordem de serviço, identificação, parecer, quantidade, descrição e custo real. O sistema também permite a exportação desses dados para um arquivo Word.
 
 Funcionalidades
