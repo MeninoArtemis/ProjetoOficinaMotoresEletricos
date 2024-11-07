@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tirar Notas</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/docxtemplater/3.19.0/docxtemplater.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pizzip/3.0.6/pizzip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Notas</h1>
+
+        <!-- Formulário para Adicionar Item ao Inventário -->
+        <form id="machineForm">
+            <input type="text" id="cliente" placeholder="Cliente" required>
+            <input type="text" id="ordemServico" placeholder="Ordem de Serviço" required>
+            <input type="text" id="identificacao" placeholder="Identificação do Componente" required>
+            <textarea id="parecer" placeholder="Parecer Geral" required></textarea>
+            <input type="number" id="quantidade" placeholder="Quantidade" required>
+            <textarea id="descricao" placeholder="Descrição" required></textarea>
+            <input type="number" id="custo" placeholder="Custo Real" required step="0.01">
+            
+            <!-- Campo de Imagem -->
+            <label for="imagem">Imagem:</label>
+            <input type="file" id="imagem" accept="image/*">
+
+            <button type="submit">Adicionar Item</button>
+        </form>
+
+        <div id="inventory">
+            <h2>Itens no Inventário</h2>
+            <button onclick="showAllMachines()">Mostrar Tudo</button>
+            <button onclick="exportInventoryToWord()">Exportar para Word</button>
+            <ul id="machineList"></ul>
+        </div>
+
+        <button onclick="window.location.href='../html/ordem_servico.html'">Ver Tabela de Ordens de Serviço</button>
+        <button onclick="logout()">Sair</button>
+    </div>
+    <script src="../js/inventory.js"></script>
+</body>
+</html>
+

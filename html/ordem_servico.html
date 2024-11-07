@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados dos Motores</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Dados dos Motores</h1>
+
+        <!-- Formulário para Adicionar Dados da Ordem de Serviço -->
+        <form id="osForm">
+            <input type="text" id="marca" placeholder="Marca">
+            <input type="text" id="modelo" placeholder="Modelo">
+            <input type="text" id="cv" placeholder="CV">
+            <input type="text" id="volts" placeholder="Volts">
+            <input type="text" id="amperes" placeholder="Amperes">
+            <input type="text" id="rpm" placeholder="RPM">
+            <input type="text" id="hz" placeholder="Hz">
+            <input type="text" id="isolacao" placeholder="Isolação">
+            <input type="text" id="ip" placeholder="IP">
+            <input type="text" id="es" placeholder="E.S">
+            <input type="text" id="cPacote" placeholder="C. Pacote">
+            <input type="text" id="dPacotes" placeholder="D. Pacotes">
+            <input type="text" id="nRanhuras" placeholder="N. Ranhuras">
+            <input type="text" id="ampVPasse" placeholder="Amp V. Passe">
+            <input type="text" id="espias" placeholder="Espias">
+            <input type="text" id="fio" placeholder="Fio">
+            <input type="text" id="ligSerie" placeholder="Ligação Série">
+            <input type="text" id="ligParalelo" placeholder="Ligação Paralelo">
+            <input type="text" id="terminais" placeholder="Terminais">
+            <input type="text" id="pesoM" placeholder="Peso M">
+            <input type="text" id="grupoB" placeholder="Grupo B">
+            <input type="text" id="bGrupo" placeholder="B Grupo">
+            <textarea id="obs" placeholder="Observações"></textarea>
+            <input type="date" id="data">
+            <label for="imagem" >laudo:</label>
+            <input type="file" id="imagem" accept="image/*">
+
+            <button type="submit">laudo tecnico </button>
+            <button type="submit">Adicionar Dados O.S</button>
+        </form>
+
+        <div id="osData">
+            <h2>Ordens de Serviço Registradas</h2>
+            <button onclick="exportOSToExcel()">Exportar para Excel</button>
+            <ul id="osList"></ul>
+        </div>
+
+        <button onclick="window.location.href='../html/inventory.html'">Voltar Notas</button>
+    </div>
+    <script src="../js/ordem_servico.js"></script>
+</body>
+</html>
+

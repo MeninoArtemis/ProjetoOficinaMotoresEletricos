@@ -1,0 +1,118 @@
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Organiza logo e formulário em uma coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center;  /* Centraliza horizontalmente */
+    height: 100vh; /* Full screen height */
+    padding: 0 20px; /* Adiciona padding nas laterais */
+    font-size: 16px;
+}
+
+/* Logo */
+.logo {
+    margin-bottom: 20px;  /* Espaçamento entre logo e o formulário */
+}
+
+.logo-image {
+    width: 200px;
+    height: auto;
+}
+
+/* Container Principal */
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Largura do formulário */
+    padding: 40px;
+    text-align: center;
+}
+
+/* Títulos */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* Formulário */
+form {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+input, textarea, button {
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+input[type="file"] {
+    font-size: 1rem;
+    padding: 10px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background-color: #28a745; /* Cor de fundo verde */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838; /* Cor de fundo verde mais escuro quando hover */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        gap: 10px;
+    }
+
+    input, textarea, button {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    form {
+        gap: 8px;
+    }
+
+    input, textarea, button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
